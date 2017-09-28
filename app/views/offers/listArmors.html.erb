@@ -1,0 +1,21 @@
+<html>
+	<table>
+	  <tr>
+		<th>Name</th>
+		<th>Slot</th>
+		<th>Weight</th>
+		<th>Price</th>
+		<th>Level</th>
+	  </tr>
+	 
+	<% @offers.each do |o| %>
+	  <tr>
+		<td><%= o["name"] %></td>
+		<td><%= o["slot"] %></td>
+		<td><%= o["weight"] %></td>
+		<td><%= o["price"] %></td>
+		<td><%= o["level"] %></td>
+	  </tr>
+	<% end %>
+	</table>
+</html>
